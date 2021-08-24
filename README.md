@@ -2,8 +2,9 @@
 
 ## Contents
 
-``src`` contains the source code for UDP ``EchoServer.java`` and ``EchoClient.java`` 
-``out`` contains the compiled java classes ``EchoServer.class`` and ``EchoClient.class`` and ``Dockerfile`` to build the Docker image for the ``EchoServer`` and the YAML files to deploy the Docker image on Oracle Kubernetes Engine (OKE) to be used with a Network Load Balancer (NLB).
+``src`` contains the source code for UDP ``EchoServer.java`` and ``EchoClient.java``
+
+``out`` contains the compiled java classes ``EchoServer.class`` and ``EchoClient.class`` and ``Dockerfile`` to build the Docker image for the ``EchoServer`` and also the YAML files to deploy the Docker image on Oracle Kubernetes Engine (OKE) to be used with a Network Load Balancer (NLB).
 
 ## Testing UDP Server locally on port 30007
 
