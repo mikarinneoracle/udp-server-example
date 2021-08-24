@@ -58,5 +58,10 @@ Then run the client as previously:
 
 ```
 java EchoClient Hello-from-docker 127.0.0.1 30007
+```
+
+And see the output (also on server):
+
+```
 Hello-from-docker , 17
 ```
