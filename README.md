@@ -7,15 +7,17 @@
 
 ## Testing UDP Server locally
 
-Run the following commands locally and you should see the output:
+Run the following commands locally:
 
 ``
 java EchoServer
-Hello , 5
 ``
 
 ``
 java EchoClient Hello 127.0.0.1 30007
+``
+You should see output on the client (and on the server output once it's been called):
+
+``
 Hello , 5
 ``
-
