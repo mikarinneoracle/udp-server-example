@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udp-server
+  labels:
+    app: udp-server
+spec:
+  selector:
+    matchLabels:
+      app: udp-server
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: udp-server
+    spec:
+      containers:
+        - name: udp-server
+          image: fra.ocir.io/sefinland/mrinne/udpserver:5.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 30007
+              protocol: UDP
+
