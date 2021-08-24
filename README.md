@@ -9,26 +9,26 @@
 
 Run the following commands locally:
 
-``
+```
 java EchoServer
-``
+```
 
-``
+```
 java EchoClient Hello 127.0.0.1 30007
-``
+```
 
 You should see output on the client (and on the server output once it's been called):
 
-``
+```
 Hello , 5
-``
+```
 
 ## Build Docker Image of the EchoServer
 
 On the ``out`` dir, run the ``docker build .``command as follows:
 
 
-``
+```
 docker build .
 Sending build context to Docker daemon  11.26kB
 Step 1/5 : FROM openjdk:16-alpine3.13
@@ -46,4 +46,4 @@ Step 5/5 : CMD java EchoServer
 Removing intermediate container 0fd526c24591
  ---> 058375df994d
 Successfully built 058375df994d
-``
+```
