@@ -47,3 +47,16 @@ Removing intermediate container 0fd526c24591
  ---> 058375df994d
 Successfully built 058375df994d
 ```
+
+The run it with Docker passing the created image ``058375df994d`` and ports ``-p 30007:30007 -p 30007:30007/udp`` from command line:
+
+```
+docker run -it -p 30007:30007 -p 30007:30007/udp 058375df994d
+```
+
+Then run the client as previously:
+
+```
+java EchoClient Hello-from-docker 127.0.0.1 30007
+Hello-from-docker , 17
+```
